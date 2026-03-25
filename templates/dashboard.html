@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="d-flex align-items-center justify-content-center">
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+
+            <div class="card dashboard-card p-5 text-center">
+                <h2 class="mb-5 dashboard-title">🎓 Student Dashboard</h2>
+
+                <div class="d-grid gap-4">
+                    <a href="/mark" class="btn btn-action btn-lg">
+                        📸 Mark Attendance
+                    </a>
+
+                    <a href="/view" class="btn btn-action btn-lg">
+                        📄 View Attendance Records
+                    </a>
+
+                    <a href="/logout" class="btn btn-logout btn-lg">
+                        🚪 Logout
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
